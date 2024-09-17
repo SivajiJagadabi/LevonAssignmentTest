@@ -1,0 +1,82 @@
+
+.traffic-light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 5px solid #333;
+    background: #222;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.lights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
+    padding: 10px;
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: background-color 1s ease-in-out;
+}
+
+.green-light {
+    background-color: green;
+}
+
+.yellow-light {
+    background-color: yellow;
+}
+
+.red-light {
+    background-color: red;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.emergency {
+    background-color: #f44336;
+}
+
+.button.emergency:hover {
+    background-color: #e53935;
+}
+
+.countdown {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px;
+}
